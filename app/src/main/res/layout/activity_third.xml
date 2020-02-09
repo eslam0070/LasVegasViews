@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="412dp"
+        android:layout_height="291dp"
+        android:background="@drawable/image_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header_background"
+        app:srcCompat="@drawable/ic_keyboard_arrow_down" />
+
+    <ScrollView
+        android:id="@+id/third_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" >
+
+            <TextView
+                android:id="@+id/third_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:text="@string/the_start_hotel_casino_amp_skypod" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/third_ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.5"
+                    android:stepSize="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/third_title"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:id="@+id/third_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="@string/_4_91"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@id/third_ratingBar"
+                    app:layout_constraintTop_toBottomOf="@id/third_title" />
+
+                <TextView
+                    android:id="@+id/third_rating_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:text="@string/_510"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/third_rating_number"
+                    app:layout_constraintTop_toBottomOf="@id/third_title" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="25sp"
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/opensans_bold"/>
+
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about2"
+                android:textColor="@color/colorPrimary"
+                android:alpha="0.5"
+                android:textSize="15sp"
+                android:fontFamily="@font/opensans_regular"/>
+
+            <TextView
+                android:layout_marginTop="15sp"
+                android:id="@+id/venue_Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/venue_type"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/opensans_bold"/>
+
+            <TextView
+                android:id="@+id/venue_Type_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant"
+                android:textColor="@color/colorPrimary"
+                android:alpha="0.5"
+                android:textSize="15sp"
+                android:fontFamily="@font/opensans_regular"/>
+
+            <TextView
+                android:layout_marginTop="15sp"
+                android:id="@+id/type_of_View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type_of_view"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/opensans_bold"/>
+
+            <TextView
+                android:id="@+id/type_of_View_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/typeofview"
+                android:textColor="@color/colorPrimary"
+                android:alpha="0.5"
+                android:textSize="15sp"
+                android:fontFamily="@font/opensans_regular"/>
+
+            <Button
+                android:id="@+id/roadmap_button"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/opensans_bold"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_steps"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:textSize="15sp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="20dp"
+                android:text="C H E C K   R O A D M A P" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
